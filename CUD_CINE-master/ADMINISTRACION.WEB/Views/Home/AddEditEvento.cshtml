@@ -1,0 +1,63 @@
+﻿<h1 class="mt-4">Agregar Eventos</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item">Inicio</li>
+    <li class="breadcrumb-item">Eventos</li>
+    <li class="breadcrumb-item active">Agregar Eventos</li>
+</ol>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Formulario
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nombreEvento" placeholder="Nombre del evento" required />
+                <label for="nombreEvento">Nombre del evento</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="datetime-local" id="fecha" name="fecha" class="form-control" required />
+                <label for="fecha">Fecha y hora del evento</label>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="duracion">Duración</label>
+                <select class="form-control" required id="duracion" name="duracion">
+                    <option disabled="">Selecciona una duración</option>
+                    <option value="1">1 hora</option>
+                    <option value="2">2 horas</option>
+                    <option value="3">3 horas</option>
+                    <option value="4">4 horas</option>
+                </select>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="lugar" placeholder="Lugar del evento" required />
+                <label for="lugar">Lugar del evento</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="urlSitioWeb" placeholder="Descripcion del evento" required />
+                <label for="urlSitioWeb">Descripcion del Evento</label>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="categoria">Categoría</label>
+                <select class="form-control" required id="categoria" name="categoria">
+                    <option disabled="">Selecciona una categoría</option>
+                    <option value="Ep">Estrenos de películas</option>
+                    <option value="Fc">Festivales de cine</option>
+                    <option value="R">Retrospectivas</option>
+                    <option value="Pe">Proyecciones especiales</option>
+                    <option value="Pre">Preestrenos</option>
+                    <option value="Pal">Proyecciones al aire libre</option>
+                </select>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="urlSitioWeb" placeholder="URL del sitio web del evento" required />
+                <label for="urlSitioWeb">URL del sitio web del evento</label>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                <a class="small" href="#">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+            </div>
+        </form>
+    </div>
+</div>

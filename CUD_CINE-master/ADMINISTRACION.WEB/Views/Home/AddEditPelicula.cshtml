@@ -1,0 +1,63 @@
+﻿<h1 class="mt-4">Agregar Películas</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item">Inicio</li>
+    <li class="breadcrumb-item">Películas</li>
+    <li class="breadcrumb-item active">Agregar Películas</li>
+</ol>
+
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Formulario - Películas
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text"  id="tituloPelicula" placeholder="Título de la película" required />
+                <label for="tituloPelicula">Título de la Película</label>
+            </div>
+            <div class="form-floating mb-3">
+                <label for="generoPelicula">Género</label>
+                <select class="form-control" id="generoPelicula" name="generoPelicula" placeholder="Género" required>
+                    <option disabled="">Selecciona un Género</option>
+                    <option value="1">Acción</option>
+                    <option value="2">Animación</option>
+                    <option value="3">Aventura</option>
+                    <option value="4">Ciencia Ficción</option>
+                    <option value="5">Comedia</option>
+                    <option value="6">Drama</option>
+                    <option value="7">Drama</option>
+                    <option value="8">Superhéroes</option>
+                    <option value="9">Terror</option>
+                    <option value="10">Romance</option>
+                    <option value="11">Documental</option>
+                </select>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" type="number" id="duracionPelicula" placeholder="Duración" required />
+                <label for="duracionPelicula">Duración (min)</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" type="date" id="fechaEstrenoPelicula" placeholder="Fecha de Estreno" required />
+                <label for="fechaEstrenoPelicula">Fecha de Estreno</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <label for="generoPelicula">Clasificación</label>
+                <select class="form-control" id="clasificacionPelicula" name="clasificacionPelicula" required>
+                    <option disabled="">Selecciona una clasificación</option>
+                    <option value="1">APT</option>
+                    <option value="2">+14</option>
+                    <option value="3">+18</option>
+                </select>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                <a class="small" href="#">Cancelar</a>
+                <a class="btn btn-primary" href="#">Aceptar</a>
+            </div>
+        </form>
+    </div>
+</div>
